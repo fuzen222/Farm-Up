@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmUp | Gamified Urban Farming Platform</title>
+    <meta name="description"
+        content="FarmUp helps city residents grow vegetables at home with starter kits, guidance, and a gamified farming app. Earn rewards and sell your harvest!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="FarmUp" class="logo-img">
+            </a>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#problem">Why Farm?</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#audience">Who We Serve</a></li>
+                    <li><a href="#app">The App</a></li>
+                    <li><a href="#impact">Our Impact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="#download" class="btn btn-outline" data-cursor="hover">Get App</a>
+                    <a href="#starter-kit" class="btn btn-primary" data-cursor="hover">Start Farming</a>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+
+            <div class="container hero-container">
+                <div class="hero-content" data-animate>
+                    <div class="badge">🚀 Join the Green Revolution</div>
+                    <h1 class="hero-title">Turn Your Balcony into a <span class="gradient-text">Micro-Farm.</span></h1>
+                    <p class="hero-subtitle">FarmUp provides starter kits, expert guidance, and a gamified app to help
+                        you grow organic veggies, earn rewards, and even sell your harvest.</p>
+
+                    <div class="hero-cta-group">
+                        <a href="#starter-kit" class="btn btn-primary btn-large">
+                            Get Your Starter Kit
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </a>
+                        <a href="#how-it-works" class="btn btn-secondary btn-large">
+                            <ion-icon name="play-circle-outline"></ion-icon>
+                            See How It Works
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">5k+</span>
+                            <span class="stat-label">Urban Growers</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-value">12k kg</span>
+                            <span class="stat-label">Organic Yield</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-value">30%</span>
+                            <span class="stat-label">Less Carbon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual" data-animate="fade-left">
+                    <div class="visual-wrapper">
+                        <!-- Abstract Phone / Plant graphic representation -->
+                        <div class="floating-card crop-card">
+                            <div class="crop-icon">🍅</div>
+                            <div class="crop-info">
+                                <span>Harvest Ready!</span>
+                                <strong>Tomatoes (+40 pts)</strong>
+                            </div>
+                        </div>
+                        <div class="floating-card profit-card">
+                            <ion-icon name="trending-up-outline"></ion-icon>
+                            <div class="profit-info">
+                                <span>Earned Today</span>
+                                <strong>₹120.00</strong>
+                            </div>
+                        </div>
+                        <div class="main-visual-element">
+                            <!-- We will style this via CSS to look like an app on a beautiful nature background -->
+                            <div class="plant-pot">
+                                <div class="leaves"></div>
+                                <div class="pot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Problem / Value Proposition -->
+        <section class="problem-section" id="problem">
+            <div class="container">
+                <div class="section-header text-center" data-animate>
+                    <h2 class="section-title">Why <span class="gradient-text">FarmUp?</span></h2>
+                    <p class="section-subtitle">We're solving the biggest challenges to urban living and healthy eating.
+                    </p>
+                </div>
+
+                <div class="grid layout-3-col">
+                    <div class="card problem-card" data-animate>
+                        <div class="card-icon bg-red">
+                            <ion-icon name="business-outline"></ion-icon>
+                        </div>
+                        <h3 class="card-title">Lack of Space</h3>
+                        <p class="card-text">City apartments have limited area. Our kits maximize vertical space for
+                            balconies and rooftops.</p>
+                    </div>
+
+                    <div class="card problem-card" data-animate="delay-1">
+                        <div class="card-icon bg-green">
+                            <ion-icon name="leaf-outline"></ion-icon>
+                        </div>
+                        <h3 class="card-title">Demand for Organic</h3>
+                        <p class="card-text">High-quality, pesticide-free fresh veggies are expensive and hard to find.
+                            We help you grow them.</p>
+                    </div>
+
+                    <div class="card problem-card" data-animate="delay-2">
+                        <div class="card-icon bg-blue">
+                            <ion-icon name="earth-outline"></ion-icon>
+                        </div>
+                        <h3 class="card-title">High Carbon Food</h3>
+                        <p class="card-text">Commercial food logs incredible "food miles". Growing at home cuts
+                            emissions and saves the planet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="how-it-works" id="how-it-works">
+            <div class="container">
+                <div class="split-layout">
+                    <div class="split-content" data-animate>
+                        <h2 class="section-title">From Balcony to <span class="gradient-text">Marketplace</span></h2>
+                        <p class="section-subtitle">Getting started is as easy as planting a seed. Our app guides you
+                            every step of the way.</p>
+
+                        <div class="steps-list">
+                            <div class="step-item">
+                                <div class="step-number">1</div>
+                                <div class="step-details">
+                                    <h4>Get a Starter Kit</h4>
+                                    <p>We deliver self-contained, nutrient-rich soil and seeds tailored for your space.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">2</div>
+                                <div class="step-details">
+                                    <h4>Grow with the App</h4>
+                                    <p>Track watering, get AI disease detection, and follow expert tips.</p>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">3</div>
+                                <div class="step-details">
+                                    <h4>Earn Rewards & Harvest</h4>
+                                    <p>Gain XP and unlock badges while your plants thrive and bear fruit.</p>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">4</div>
+                                <div class="step-details">
+                                    <h4>Sell Your Produce</h4>
+                                    <p>FarmUp buys your surplus at fair prices and sells it to local markets.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="split-visual" data-animate="fade-left">
+                        <div class="app-mockup">
+                            <div class="phone-frame">
+                                <div class="phone-notch"></div>
+                                <div class="app-screen">
+                                    <!-- Simplified CSS representation of app -->
+                                    <div class="app-header">My Garden</div>
+                                    <div class="app-plant-card">
+                                        <div class="app-plant-img">🥬</div>
+                                        <div class="app-plant-info">
+                                            <span>Spinach</span>
+                                            <div class="health-bar">
+                                                <div class="fill" style="width: 80%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="app-plant-card alert">
+                                        <div class="app-plant-img">🥕</div>
+                                        <div class="app-plant-info">
+                                            <span>Carrots</span>
+                                            <span class="status-msg">Needs Water!</span>
+                                        </div>
+                                    </div>
+                                    <div class="app-btn">Water All Plants</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Segments / Who We Serve -->
+        <section class="segments-section bg-light" id="audience">
+            <div class="container">
+                <div class="section-header text-center" data-animate>
+                    <h2 class="section-title">An Ecosystem for <span class="gradient-text">Everyone</span></h2>
+                    <p class="section-subtitle">FarmUp connects growers to buyers, incentivized by environmental impact.
+                    </p>
+                </div>
+
+                <div class="segment-tabs" data-animate>
+                    <button class="tab-btn active" data-target="tab-growers">🧑‍🌾 Urban Growers</button>
+                    <button class="tab-btn" data-target="tab-buyers">🥗 Local Buyers</button>
+                    <button class="tab-btn" data-target="tab-corporate">🏢 Corporate Partners</button>
+                </div>
+
+                <div class="tab-content-container" data-animate>
+                    <div class="tab-pane active" id="tab-growers">
+                        <div class="tab-inner">
+                            <div class="tab-text">
+                                <h3>Turn free time into fresh food and income.</h3>
+                                <p>Perfect for students, apartment residents, and eco-friendly families. Enjoy the
+                                    mental health benefits of gardening while contributing to a greener city. Best of
+                                    all? You can sell your harvest right back to FarmUp.</p>
+                                <ul class="feature-list">
+                                    <li><ion-icon name="checkmark-circle"></ion-icon> Eat organic, homegrown food</li>
+                                    <li><ion-icon name="checkmark-circle"></ion-icon> Earn small income consistently
+                                    </li>
+                                    <li><ion-icon name="checkmark-circle"></ion-icon> No massive time commitment</li>
+                                </ul>
+                            </div>
+                            <div class="tab-image grower-img">
+                                <div class="img-overlay text">"I made ₹1,500 this month from my balcony tomatoes!"</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="tab-buyers">
+                        <div class="tab-inner">
+                            <div class="tab-text">
+                                <h3>Hyper-local, zero-chemical produce.</h3>
+                                <p>We aggregate the harvest from our urban growers and distribute them to local
+                                    households, organic stores, restaurants, and supermarkets. Fresh food that was grown
+                                    just down the street.</p>
+                                <ul class="feature-list">
+                                    <li><ion-icon name="checkmark-circle"></ion-icon> Guaranteed organic &
+                                        pesticide-free</li>
+                                    <li><ion-icon name="checkmark-circle"></ion-icon> Picked hours ago, not days</li>
+                                    <li><ion-icon name="checkmark-circle"></ion-icon> Support your local community
+                                        growers</li>
+                                </ul>
+                            </div>
+                            <div class="tab-image buyer-img"></div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="tab-corporate">
+                        <div class="tab-inner">
+                            <div class="tab-text">
+                                <h3>Meet your ESG goals with Carbon Credits.</h3>
+                                <p>Urban farming significantly reduces carbon emissions via reduced transport and
+                                    organic waste management. We track this impact and sell verified carbon credits to
+                                    companies striving for sustainability.</p>
+                                <ul class="feature-list">
+                                    <li><ion-icon name="checkmark-circle"></ion-icon> Transparent, IoT-verified data
+                                    </li>
+                                    <li><ion-icon name="checkmark-circle"></ion-icon> Meaningful localized impact</li>
+                                    <li><ion-icon name="checkmark-circle"></ion-icon> Enhance corporate social
+                                        responsibility</li>
+                                </ul>
+                            </div>
+                            <div class="tab-image corporate-img"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Premium App Features -->
+        <section class="features-section" id="app">
+            <div class="container">
+                <div class="section-header text-center" data-animate>
+                    <h2 class="section-title">Your Garden's <span class="gradient-text">Co-Pilot</span></h2>
+                    <p class="section-subtitle">Our free app is powerful. But our premium features act like an expert
+                        farmer in your pocket.</p>
+                </div>
+
+                <div class="grid layout-4-col">
+                    <div class="feature-card" data-animate>
+                        <div class="feature-icon"><ion-icon name="scan-outline"></ion-icon></div>
+                        <h4>AI Disease Detection</h4>
+                        <p>Snap a photo of a sick leaf, and our AI instantly diagnoses the problem and suggests a cure.
+                        </p>
+                        <span class="badge premium">Premium</span>
+                    </div>
+
+                    <div class="feature-card" data-animate="delay-1">
+                        <div class="feature-icon"><ion-icon name="people-outline"></ion-icon></div>
+                        <h4>Expert Consultations</h4>
+                        <p>A plant not growing? Video call a certified agriculturist to evaluate your setup.</p>
+                        <span class="badge premium">Premium</span>
+                    </div>
+
+                    <div class="feature-card" data-animate="delay-2">
+                        <div class="feature-icon"><ion-icon name="bulb-outline"></ion-icon></div>
+                        <h4>Advanced Tips</h4>
+                        <p>Get micro-climate specific advice for your exact balcony orientation and weather patterns.
+                        </p>
+                        <span class="badge premium">Premium</span>
+                    </div>
+
+                    <div class="feature-card" data-animate="delay-3">
+                        <div class="feature-icon"><ion-icon name="star-outline"></ion-icon></div>
+                        <h4>Premium Seeds</h4>
+                        <p>Access to rare, high-yield, and fast-growing seeds shipped directly to your door.</p>
+                        <span class="badge premium">Premium</span>
+                    </div>
+                </div>
+
+                <div class="challenge-cta text-center" data-animate>
+                    <div class="challenge-box">
+                        <h3>🏆 Join the 30-Day Balcony Farming Challenge!</h3>
+                        <p>Get a free starter kit when you sign up under our new program. Share your progress and win
+                            prizes!</p>
+                        <button class="btn btn-primary">Join Challenge</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Impact -->
+        <section class="impact-section" id="impact">
+            <div class="container">
+                <div class="impact-banner" data-animate>
+                    <div class="impact-content">
+                        <h2>Farming for a <span class="gradient-text">Better Tomorrow</span></h2>
+                        <ul class="impact-list">
+                            <li><ion-icon name="planet-outline"></ion-icon> <strong>Reducing Food Miles:</strong> Food
+                                grown and consumed locally.</li>
+                            <li><ion-icon name="happy-outline"></ion-icon> <strong>Empowering Youth:</strong> Making
+                                farming cool and gamified.</li>
+                            <li><ion-icon name="leaf-outline"></ion-icon> <strong>More Organic Supply:</strong> Fighting
+                                the chemical food crisis.</li>
+                        </ul>
+                    </div>
+                    <div class="impact-cta">
+                        <p>Ready to make a difference and earn?</p>
+                        <a href="#starter-kit" class="btn btn-primary btn-large">Get Started Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <img src="images/logo.png" alt="FarmUp" class="logo-img">
+                </a>
+                <p>Turning city balconies into micro-farms. Grow, eat, sell, and save the planet—one plant at a time.
+                </p>
+                <div class="social-links">
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Platform</h4>
+                <ul>
+                    <li><a href="#how">How it Works</a></li>
+                    <li><a href="#app">The App</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#challenge">30-Day Challenge</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Partners</h4>
+                <ul>
+                    <li><a href="#">Seed Suppliers</a></li>
+                    <li><a href="#">Logistics Partners</a></li>
+                    <li><a href="#">Carbon Marketplace</a></li>
+                    <li><a href="#">Corporate ESG</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Hello@FarmUp.in</p>
+                <p>+91 (800) 123-4567</p>
+                <p>Bengaluru, India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 FarmUp Inc. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
